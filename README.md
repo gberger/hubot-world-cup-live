@@ -1,7 +1,8 @@
 # hubot-world-cup-live [![NPM version](https://badge.fury.io/js/hubot-world-cup-live.png)](http://badge.fury.io/js/hubot-world-cup-live)
 
-A [Hubot](https://github.com/github/hubot) plugin that pushes news from [superfeedr](http://superfeedr.com/)
-to a chatroom.
+A [Hubot](https://github.com/github/hubot) plugin that pushes World Cup goals to a chat room.
+
+Powered by [http://worldcup.sfg.io/](http://worldcup.sfg.io/).
 
 ## Installation
 
