@@ -22,6 +22,9 @@ INTERVAL = 30*1000
 module.exports = (robot) ->
 	cache = ''
 
+	unless process.env.HUBOT_WORLD_CUP_DEFAULT_ROOM
+		robot.logger.warning 'The HUBOT_WORLD_CUP_DEFAULT_ROOM environment variable is not set!'
+
 	doIt = ->
 		r {url: FEED_URL, json: true}, (error, response, body) ->
 			if error
@@ -31,6 +34,6 @@ module.exports = (robot) ->
 				if message != cache
 					cache = message
 					if message != ''
-						robot.messageRoom (process.env.HUBOT_WORLD_CUP_DEFAULT_ROOM || 'FIFA World Cup 2014'), message
+						robot.messageRoom process.env.HUBOT_WORLD_CUP_DEFAULT_ROOM, message
 
 	setInterval doIt, INTERVAL

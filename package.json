@@ -1,6 +1,6 @@
 {
   "name": "hubot-world-cup-live",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "author": "Guilherme Berger <guilherme.berger@gmail.com>",
   "description": "A Hubot plugin that pushes World Cup goals to a chat room",
   "keywords": [
