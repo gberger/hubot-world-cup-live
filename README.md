@@ -14,3 +14,7 @@ Powered by [http://worldcup.sfg.io/](http://worldcup.sfg.io/).
 
 Now Hubot will check for new goals on the current match every few seconds.
 Whenever a team scores, it will send a message to the configured room with the current score.
+
+**Attention!** HipChat rooms are in the format id_name@conf.hipchat.com.
+You can look at Hubot's logs to view what your desired room is called internally, or use [their API](https://www.hipchat.com/docs/api/method/rooms/list).
+If you use another chat service, please consult its documentation.
