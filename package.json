@@ -1,0 +1,32 @@
+{
+  "name": "hubot-world-cup-live",
+  "version": "0.1.0",
+  "author": "Guilherme Berger <guilherme.berger@gmail.com>",
+  "description": "A Hubot plugin that pushes World Cup goals to a chat room",
+  "keywords": [
+    "github",
+    "hubot",
+    "script",
+    "world cup",
+    "goals",
+    "soccer",
+    "footbal"
+  ],
+  "licenses" : [
+    {
+      "type" : "MIT"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gberger/hubot-world-cup-live.git"
+  },
+  "main": "./lib/world-cup-live",
+  "dependencies": {
+    "underscore": "*",
+    "request": "*"
+  },
+  "scripts": {
+    "test": "mocha test --compilers coffee:coffee-script/register"
+  }
+}
