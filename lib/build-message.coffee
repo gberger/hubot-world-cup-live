@@ -1,5 +1,8 @@
 module.exports = (body) ->
-	if body and body[0]
-		"#{body[0].home_team.code} #{body[0].home_team.goals} x #{body[0].away_team.goals} #{body[0].away_team.code}"
-	else
+	buildScore = (match) ->
+		"[#{match.home_team.code} #{match.home_team.goals} x #{match.away_team.goals} #{match.away_team.code}]"
+
+	if !body
 		""
+	else
+		body.map(buildScore).join(', ')

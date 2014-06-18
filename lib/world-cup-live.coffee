@@ -22,12 +22,15 @@ INTERVAL = 30*1000
 module.exports = (robot) ->
 	cache = ''
 
-	setInterval ->
+	doIt = ->
 		r {url: FEED_URL, json: true}, (error, response, body) ->
+			if error
+				console.log error
 			if body
 				message = buildMessage(body)
 				if message != cache
 					cache = message
 					if message != ''
 						robot.messageRoom (process.env.HUBOT_WORLD_CUP_DEFAULT_ROOM || 'FIFA World Cup 2014'), message
-	, INTERVAL
+
+	setInterval doIt, INTERVAL
