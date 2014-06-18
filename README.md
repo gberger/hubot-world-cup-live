@@ -11,4 +11,5 @@ to a chatroom.
 4. Set the `HUBOT_WORLD_CUP_DEFAULT_ROOM` environment variable
 5. Reboot Hubot.
 
-Now Hubot will check
+Now Hubot will check for new goals on the current message every few seconds.
+Whenever a team scores, it will send a message to the configured room with the current score.
