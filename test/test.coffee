@@ -23,7 +23,7 @@ describe 'messageBuilder', ->
 			]
 		assert.equal('[BRA 5 x 2 ARG]', messageBuilder(body))
 
-	it "is displays many games", ->
+	it "displays many games", ->
 		body =
 			[
 				{
